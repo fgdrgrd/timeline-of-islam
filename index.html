@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islamic & World History Timeline (0–2025)</title>
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #f5f5f5;
+    margin: 0;
+  }
+  header {
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  h1 {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  section {
+    padding: 20px;
+  }
+  h2 {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+  }
+  .event {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #00ffcc;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .event:hover {
+    background: rgba(255,255,255,0.1);
+    transform: scale(1.02);
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #111;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🌙 Islamic & World History Timeline (0 – 2025)</h1>
+  <p>From the birth of Islam to the modern era</p>
+</header>
+
+<section id="timeline"></section>
+
+<footer>Made by Muhammed © 2025</footer>
+
+<script>
+const eras = [
+  {
+    title: "🏛️ Ancient Era (0–600)",
+    events: [
+      "0 AD – Birth of Jesus (Isa عليه السلام)",
+      "476 AD – Fall of Western Roman Empire",
+      "570 AD – Birth of Prophet Muhammad ﷺ in Makkah",
+      "610 AD – First revelation in Cave Hira (start of Islam)"
+    ]
+  },
+  {
+    title: "🌙 Early Islamic Era (600–750)",
+    events: [
+      "622 – Hijra: Prophet Muhammad ﷺ migrates to Madinah (start of Islamic calendar)",
+      "630 – Muslims conquer Makkah peacefully",
+      "632 – Passing of Prophet Muhammad ﷺ",
+      "661 – Imam Ali (RA) martyred; Umayyad Caliphate begins",
+      "750 – Abbasid Caliphate established in Baghdad"
+    ]
+  },
+  {
+    title: "🏺 Golden Age of Islam (750–1250)",
+    events: [
+      "762 – Baghdad founded; becomes world’s knowledge center",
+      "800 – Scholars like Al-Khwarizmi and Jabir ibn Hayyan advance science",
+      "1000 – Ibn Sina (Avicenna) writes ‘The Canon of Medicine’",
+      "1099 – Crusaders capture Jerusalem",
+      "1187 – Salahuddin Ayyubi liberates Jerusalem",
+      "1258 – Mongols destroy Baghdad, ending Abbasid rule"
+    ]
+  },
+  {
+    title: "⚔️ Empires & Conquests (1250–1700)",
+    events: [
+      "1299 – Ottoman Empire founded by Osman I",
+      "1453 – Ottomans capture Constantinople (Istanbul)",
+      "1492 – End of Muslim rule in Spain (Al-Andalus)",
+      "1526 – Mughal Empire founded in India by Babur",
+      "1571 – Battle of Lepanto; Ottomans vs European alliance"
+    ]
+  },
+  {
+    title: "🏭 Modern Era (1700–1900)",
+    events: [
+      "1798 – Napoleon invades Egypt; Ottoman decline begins",
+      "1857 – Indian Rebellion; end of Mughal Empire",
+      "1877 – Sultan Abdul Hamid II becomes Caliph",
+      "1882 – British occupy Egypt"
+    ]
+  },
+  {
+    title: "🌐 Contemporary Era (1900–2025)",
+    events: [
+      "1917 – Balfour Declaration promises Jewish homeland in Palestine",
+      "1924 – Abolition of the Ottoman Caliphate",
+      "1947 – Partition of India; creation of Pakistan 🇵🇰",
+      "1969 – Al-Aqsa Mosque arson attack",
+      "1979 – Islamic Revolution in Iran",
+      "2001 – 9/11 attacks; global impact on Muslims",
+      "2011 – Arab Spring begins in Middle East",
+      "2020 – Global pandemic affects Hajj for first time in modern history",
+      "2025 – Islamic digital education and AI revolution rise"
+    ]
+  }
+];
+
+const timeline = document.getElementById("timeline");
+eras.forEach(era => {
+  const h2 = document.createElement("h2");
+  h2.textContent = era.title;
+  timeline.appendChild(h2);
+  era.events.forEach(e => {
+    const div = document.createElement("div");
+    div.className = "event";
+    div.textContent = e;
+    timeline.appendChild(div);
+  });
+});
+</script>
+</body>
+</html>
